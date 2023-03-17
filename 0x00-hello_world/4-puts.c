@@ -1,9 +1,10 @@
+\
 #include <stdio.h>
 
 /**
- *This program prints
+ * main -Entry point
  *
- *Programming is like building a multilingual puzzle
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -11,7 +12,8 @@ int main(void)
 
 	char str[] = "\"Programming is like building a multilingual puzzle";
 
-        puts(str);
+	puts(str);
 
-        return (0);
+	return (0);
+
 }
