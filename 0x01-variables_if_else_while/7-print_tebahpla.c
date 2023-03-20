@@ -8,16 +8,16 @@
 int main(void)
 {
 
-char str[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
+char alph;  
 
-int i;
-
-for (i = 0; i <= 52; i++)
+for (alph = 'z'; alph >= 'a'; alph--)
 {
 
-putchar(str[i]);
+putchar(alph);
 
 }
+
+putchar('\n');
 
 return (0);
 
