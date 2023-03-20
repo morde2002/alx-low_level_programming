@@ -12,7 +12,7 @@ char str[] = "abcdfghijklmnoprstuvwxyz\n";
 
 int i;
 
-for (i = 0; i <= 52; i++)
+for (i = 0; i <= 24; i++)
 {
 
 putchar(str[i]);
