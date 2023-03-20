@@ -8,47 +8,44 @@
 int main(void)
 {
 
-	int i;
-	int t;
+int i, j;
 
-	for (i = 0; i <= 9; i++)
-	{
-		int j;
+for (i = 0; i < 100; i++)
+{
 
-		for (j = 0; j <= 9; j++)
-		{
-			int l;
+for (j = 0; j < 100; j++)
+{
 
-			for (l = 0; l <= 9; l++)
-			{
-				int k;
+if (i < j)
+{
 
-				for  (k = 0; k <= 9; k++)
-				{
-					int left = i + j;
-					int right = k + l;
+putchar((i / 10) + 48);
 
-					if (left < right)
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(' ');
-						putchar(l + '0');
-						putchar(k + '0');
+putchar((i % 10) + 48);
 
-						t = right + left;
+putchar(' ');
 
-						if (t < 35)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-				}
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+putchar((j / 10) + 48);
+
+putchar((j % 10) + 48);
+
+if (i != 98 || j != 99)
+{
+
+putchar(',');
+
+putchar(' ');
+
+}
+
+}
+
+}
+
+}
+
+putchar('\n');
+
+return (0);
 
 }
