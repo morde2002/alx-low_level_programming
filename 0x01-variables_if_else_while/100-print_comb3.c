@@ -5,34 +5,33 @@
  * Return: Always 0 (Success)
  */
 
-int main() 
-{
-  
-int i, j;
-  
-for (i = 0; i < 9; i++) 
+int main(void)
 {
 
-for (j = i + 1; j <= 9; j++) 
-{
+	int i;
 
-putchar(i + '0');
+	for (i = 0; i <= 9; i++)
+	{
+		int j;
 
-putchar(j + '0');
-
-if (i != 8 || j != 9) 
-{
-
-putchar(',');
-
-putchar(' ');
-      
-}
-
-}
-
-}
-  
-return 0;
+		for (j = 0; j <= 9; j++)
+		{
+			if (i != j && i < j)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i < 9)
+				{
+					if (i != 8)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 
 }
