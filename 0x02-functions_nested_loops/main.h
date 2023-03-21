@@ -1,12 +1,16 @@
-#include "main.h"
+#ifndef MAIN_FILE_H
+#define MAIN_FILE_H
 
 /**
- * main - check the code
+ * _putchar - this function writes char
+ * to the stdout
  *
- * Return: Always 0.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ *
+ * @c: the cahracter that will be printedout
  */
-int main(void)
-{
-    print_alphabet();
-    return (0);
-}
+
+int _putchar(char); /*function prototype for putchar.c*/
+
+#endif
