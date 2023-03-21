@@ -1,26 +1,37 @@
+#include "main.h"
+
 #include <stdio.h>
+
+
+
 /**
- * main -Entry point
+
+ * print_alphabet - print the alphabet in lowercase
+
  *
- * Return: Always 0 (Success)
+
+ * Return: void
+
  */
 
-int main(void)
+void print_alphabet(void)
+
 {
 
-char str[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
-int i;
+	int i;
 
-for (i = 0; i < 26; i++)
-{
 
-putchar(str[i]);
 
-}
+	for (i = 0; i < 26; i++)
 
-putchar('\n');
+	{
 
-return (0);
+		putchar(alp[i]);
+
+	}
+
+	putchar('\n');
 
 }
