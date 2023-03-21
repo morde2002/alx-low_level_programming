@@ -1,28 +1,26 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
- * main -Entry point
+ * print_alphabet_x10 - print the alphabet in lowercase ten time
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 void print_alphabet_x10(void)
 {
 
-int i, j;
+char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
-char c;
+int i, x;
 
 for (i = 0; i < 10; i++)
 {
 
-c = 'a';
-
-for (j = 0; j < 26; j++)
+for (x = 0; x < 26; x++)
 {
 
-putchar(c);
-
-c++;
+putchar(alp[x]);
 
 }
 
