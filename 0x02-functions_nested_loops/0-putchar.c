@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 /**
 
  * main - prints _putchar
@@ -13,25 +11,12 @@
  */
 
 int main(void)
-
 {
 
-	char str = "_putchar\n";
+_putchar("_putchar");
 
-	int i = 0;
+_putchar("\n");
 
-
-
-	while (str[i] != '\0')
-
-	{
-
-		_putchar(str[i]);
-
-		i++;
-
-	}
-
-	return (0)
+return (0);
 
 }
